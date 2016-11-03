@@ -29,11 +29,10 @@ namespace Lm2pb.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<ActionResult> Contact(Contact model)
         {
 
-            this.IsCaptchaValid("captcha not valid");
+            if(this.IsCaptchaValid("captcha not valid"));
 
             try
             {
