@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Lm2pb.Models.ProductCategory>
+@{ 
+    ViewBag.Title = "Components";
+}
+<h3 class="productions">Gear => @ViewBag.Title</h3>
+@foreach (var item in Model)
+{   
+    <hr />
+    @Html.ActionLink(@Html.DisplayFor(modelItem => item.Name).ToString(), "Details", new { id = item.ProductCategoryID })
+}
+
+<br /><br />

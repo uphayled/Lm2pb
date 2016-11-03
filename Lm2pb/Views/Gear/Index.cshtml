@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Lm2pb.Models.ProductCategory>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3 class="productions">All Gear</h3>
+@foreach (var item in Model)
+{
+
+    <hr />
+    @Html.ActionLink(@Html.DisplayFor(modelItem => item.Name).ToString(), @Html.DisplayFor(modelItem => item.Name).ToString().Split(' ')[0])
+
+
+}<br /><br />
+

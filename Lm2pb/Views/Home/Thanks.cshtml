@@ -1,0 +1,16 @@
+@using CaptchaMvc.HtmlHelpers
+@model Lm2pb.Models.Contact
+
+@{
+    ViewBag.Title = "Thanks";
+}
+<h2>@ViewBag.Title.</h2>
+
+<p>Thanks for sending us your input,</p>
+<p> @Html.ActionLink("Click Here", "Index") to return to the home page</p>
+    
+
+ 
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
