@@ -196,18 +196,6 @@
     <Property Name="Culture" Type="String" MaxLength="6" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="true" Nullable="false" />
   </EntityType>
-  <EntityType Name="vProductAndDescription2">
-    <Key>
-      <PropertyRef Name="ProductModel" />
-      <PropertyRef Name="Culture" />
-      <PropertyRef Name="Description" />
-    </Key>
-    <Property Name="ProductModelID" Type="Int32" />
-    <Property Name="ProductModel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Culture" Type="String" MaxLength="6" FixedLength="true" Unicode="true" Nullable="false" />
-    <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="ProductCategoryID" Type="Int32" />
-  </EntityType>
   <EntityType Name="vProductModelCatalogDescription">
     <Key>
       <PropertyRef Name="ProductModelID" />
@@ -400,7 +388,6 @@
     <EntitySet Name="SalesOrderHeaders" EntityType="Self.SalesOrderHeader" />
     <EntitySet Name="vGetAllCategories" EntityType="Self.vGetAllCategory" />
     <EntitySet Name="vProductAndDescriptions" EntityType="Self.vProductAndDescription" />
-    <EntitySet Name="vProductAndDescription2" EntityType="Self.vProductAndDescription2" />
     <EntitySet Name="vProductModelCatalogDescriptions" EntityType="Self.vProductModelCatalogDescription" />
     <AssociationSet Name="FK_CustomerAddress_Address_AddressID" Association="Self.FK_CustomerAddress_Address_AddressID">
       <End Role="Address" EntitySet="Addresses" />

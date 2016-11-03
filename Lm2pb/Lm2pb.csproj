@@ -265,9 +265,6 @@
     <Compile Include="Models\vProductAndDescription.cs">
       <DependentUpon>adventure.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\vProductAndDescription2.cs">
-      <DependentUpon>adventure.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\vProductModelCatalogDescription.cs">
       <DependentUpon>adventure.tt</DependentUpon>
     </Compile>

@@ -1,0 +1,1 @@
+﻿CREATE DATABASE AdventureWorks2012 ON (FILENAME = 'C:\Users\Alex\Desktop\School\Lm2pb\AdventureWorksLT2012_Data.mdf') FOR ATTACH;

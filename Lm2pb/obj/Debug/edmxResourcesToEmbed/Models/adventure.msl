@@ -177,17 +177,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="vProductAndDescription2">
-      <EntityTypeMapping TypeName="AdventureWorks2012Model.vProductAndDescription2">
-        <MappingFragment StoreEntitySet="vProductAndDescription2">
-          <ScalarProperty Name="ProductModelID" ColumnName="ProductModelID" />
-          <ScalarProperty Name="ProductModel" ColumnName="ProductModel" />
-          <ScalarProperty Name="Culture" ColumnName="Culture" />
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="ProductCategoryID" ColumnName="ProductCategoryID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="vProductModelCatalogDescriptions">
       <EntityTypeMapping TypeName="AdventureWorks2012Model.vProductModelCatalogDescription">
         <MappingFragment StoreEntitySet="vProductModelCatalogDescription">

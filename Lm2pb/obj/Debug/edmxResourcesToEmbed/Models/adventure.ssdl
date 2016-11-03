@@ -177,20 +177,6 @@ warning 6002: The table/view 'AdventureWorks2012.SalesLT.vProductAndDescription'
     <Property Name="Description" Type="nvarchar" MaxLength="400" Nullable="false" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'AdventureWorks2012.SalesLT.vProductAndDescription2' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-  <EntityType Name="vProductAndDescription2">
-    <Key>
-      <PropertyRef Name="ProductModel" />
-      <PropertyRef Name="Culture" />
-      <PropertyRef Name="Description" />
-    </Key>
-    <Property Name="ProductModelID" Type="int" />
-    <Property Name="ProductModel" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Culture" Type="nchar" MaxLength="6" Nullable="false" />
-    <Property Name="Description" Type="nvarchar" MaxLength="400" Nullable="false" />
-    <Property Name="ProductCategoryID" Type="int" />
-  </EntityType>
-  <!--Errors Found During Generation:
 warning 6002: The table/view 'AdventureWorks2012.SalesLT.vProductModelCatalogDescription' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="vProductModelCatalogDescription">
     <Key>
@@ -397,15 +383,6 @@ warning 6002: The table/view 'AdventureWorks2012.SalesLT.vProductModelCatalogDes
     [vProductAndDescription].[Culture] AS [Culture], 
     [vProductAndDescription].[Description] AS [Description]
     FROM [SalesLT].[vProductAndDescription] AS [vProductAndDescription]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="vProductAndDescription2" EntityType="Self.vProductAndDescription2" store:Type="Views" store:Schema="SalesLT">
-      <DefiningQuery>SELECT 
-    [vProductAndDescription2].[ProductModelID] AS [ProductModelID], 
-    [vProductAndDescription2].[ProductModel] AS [ProductModel], 
-    [vProductAndDescription2].[Culture] AS [Culture], 
-    [vProductAndDescription2].[Description] AS [Description], 
-    [vProductAndDescription2].[ProductCategoryID] AS [ProductCategoryID]
-    FROM [SalesLT].[vProductAndDescription2] AS [vProductAndDescription2]</DefiningQuery>
     </EntitySet>
     <EntitySet Name="vProductModelCatalogDescription" EntityType="Self.vProductModelCatalogDescription" store:Type="Views" store:Schema="SalesLT">
       <DefiningQuery>SELECT 
