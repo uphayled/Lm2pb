@@ -31,9 +31,9 @@ namespace Lm2pb.Controllers
 
 
             ViewBag.options = from x in db.ProductCategories where x.ParentProductCategoryID == 1 select new SelectListItem{ Value = x.ProductCategoryID.ToString(), Text = x.Name };
-            ViewBag.road = (from x in db.vProductAndDescription2 where x.ProductCategoryID == 6 select new SelectListItem { Value = x.ProductModelID.ToString(), Text = x.ProductModel }).Distinct();
-            ViewBag.touring = (from x in db.vProductAndDescription2 where x.ProductCategoryID == 7 select new SelectListItem { Value = x.ProductModelID.ToString(), Text = x.ProductModel }).Distinct();
-            ViewBag.mountain = (from x in db.vProductAndDescription2 where x.ProductCategoryID == 5 select new SelectListItem { Value = x.ProductModelID.ToString(), Text = x.ProductModel }).Distinct();
+            //ViewBag.road = (from x in db.vProductAndDescription2 where x.ProductCategoryID == 6 select new SelectListItem { Value = x.ProductModelID.ToString(), Text = x.ProductModel }).Distinct();
+            //ViewBag.touring = (from x in db.vProductAndDescription2 where x.ProductCategoryID == 7 select new SelectListItem { Value = x.ProductModelID.ToString(), Text = x.ProductModel }).Distinct();
+            //ViewBag.mountain = (from x in db.vProductAndDescription2 where x.ProductCategoryID == 5 select new SelectListItem { Value = x.ProductModelID.ToString(), Text = x.ProductModel }).Distinct();
 
 
             return View();

@@ -36,22 +36,23 @@ namespace Lm2pb.Controllers
             return View(query);
         }
 
-        public ActionResult Road()
+       /* public ActionResult Road()
         {
-            var road = from x in db.vProductAndDescription2 where x.Culture == "en" && x.ProductCategoryID == 6 select x;
+            //var road = from x in db.vProductAndDescription2 where x.Culture == "en" && x.ProductCategoryID == 6 select x;
             return View(road);
         }
         public ActionResult Mountain()
         {
-            var mountain = from x in db.vProductAndDescription2 where x.Culture == "en" && x.ProductCategoryID == 5 select x;
+            //var mountain = from x in db.vProductAndDescription2 where x.Culture == "en" && x.ProductCategoryID == 5 select x;
+            var mountain;
             return View(mountain);
         }
         public ActionResult Touring()
         {
-            var touring = from x in db.vProductAndDescription2 where x.Culture == "en" && x.ProductCategoryID == 7 select x;
+            //var touring = from x in db.vProductAndDescription2 where x.Culture == "en" && x.ProductCategoryID == 7 select x;
             return View(touring);
         }
-
+        */
 
         // GET: B/Create
         public ActionResult Create()

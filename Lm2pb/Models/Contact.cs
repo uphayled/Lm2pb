@@ -8,8 +8,10 @@ namespace Lm2pb.Models
 {
     public class Contact
     {
+        [Display(Name="First Name")]
         [Required]
         public String FirstName { get; set; }
+        [Display(Name = "Last Name")]
         [Required]
         public String LastName { get; set; }
         [Required]
